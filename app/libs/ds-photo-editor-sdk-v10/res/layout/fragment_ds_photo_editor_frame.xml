@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="@null"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:isScrollContainer="true"
+        android:id="@+id/ds_photo_editor_frames_container"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_1"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_2"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_3"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_4"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_4"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_5"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_5"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_6"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_6"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_7"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_7"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_8"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_8"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_9"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_9"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_10"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_10"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_11"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_11"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_12"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_12"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_13"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_13"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_14"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_14"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_15"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_15"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_16"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_16"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_17"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_17"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_18"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_18"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fragment_ds_photo_editor_frame_image_button_padding"
+            android:layout_margin="@dimen/fragment_ds_photo_editor_frame_image_button_margin"
+            android:background="@null"
+            android:src="@drawable/ds_frame_icon_19"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/ds_photo_editor_frame_19"
+            />
+
+    </LinearLayout>
+
+</HorizontalScrollView>

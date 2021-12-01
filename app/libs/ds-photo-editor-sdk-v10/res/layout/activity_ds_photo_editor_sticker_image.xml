@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/ds_photo_editor_sticker_root_layout"
+    >
+
+    <com.dsphotoeditor.sdk.ui.stickerview.StickerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ds_photo_editor_sticker_view"
+        app:showBorder="true"
+        app:showIcons="true"
+        android:background="@null"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/ds_photo_editor_sticker_image_view"
+            />
+    </com.dsphotoeditor.sdk.ui.stickerview.StickerView>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_sticker_top_bar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_cancel"
+            android:id="@+id/ds_photo_editor_sticker_top_button_cancel"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ds_photo_editor_main_bottom_bar_sticker"
+            android:textColor="@color/dsTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_ds_photo_editor_top_bar_title_font_size"
+            android:layout_centerInParent="true"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ds_photo_editor_sticker_top_progress_bar"
+            android:layout_toLeftOf="@+id/ds_photo_editor_sticker_top_button_apply"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_apply"
+            android:id="@+id/ds_photo_editor_sticker_top_button_apply"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds_photo_editor_sticker_bottom_bar"
+        android:scrollbars="none"
+        android:background="#273239"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:isScrollContainer="true"
+            android:id="@+id/ds_photo_editor_stickers_container"
+            >
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_3"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_4"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_5"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_6"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_7"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_8"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_9"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_10"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_11"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_12"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_13"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_14"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_15"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_16"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_17"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_18"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_19"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_20"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_21"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_22"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_23"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_24"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_25"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_26"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_27"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_28"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_29"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_30"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_height="@dimen/activity_ds_photo_editor_sticker_image_button_size"
+                android:layout_margin="@dimen/activity_ds_photo_editor_sticker_image_button_margin"
+                android:background="@null"
+                android:src="@drawable/ds_sticker_31"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

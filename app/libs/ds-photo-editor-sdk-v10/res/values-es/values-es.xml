@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_network_error_message">Por favor asegúrate de estar conectado a la red.</string>
+    <string name="ds_photo_editor_crop_button_circle">Círculo</string>
+    <string name="ds_photo_editor_crop_button_free">Sin restricción</string>
+    <string name="ds_photo_editor_exit_dialog_message">¿Salir del editor de fotos y desechar la edición?</string>
+    <string name="ds_photo_editor_exit_dialog_negative_button">Cancelar</string>
+    <string name="ds_photo_editor_exit_dialog_positive_button">Salir</string>
+    <string name="ds_photo_editor_finish_up_loading_indicator">Guardando foto...</string>
+    <string name="ds_photo_editor_loading_indicator_loading">Cargando...</string>
+    <string name="ds_photo_editor_main_bottom_bar_contrast">Contraste</string>
+    <string name="ds_photo_editor_main_bottom_bar_crop">Recortar</string>
+    <string name="ds_photo_editor_main_bottom_bar_draw">Dibujando</string>
+    <string name="ds_photo_editor_main_bottom_bar_exposure">Exposición</string>
+    <string name="ds_photo_editor_main_bottom_bar_filter">Filtro</string>
+    <string name="ds_photo_editor_main_bottom_bar_frame">Marco</string>
+    <string name="ds_photo_editor_main_bottom_bar_more_apps">Más apps</string>
+    <string name="ds_photo_editor_main_bottom_bar_orientation">Orientación</string>
+    <string name="ds_photo_editor_main_bottom_bar_pixelate">Mosaico</string>
+    <string name="ds_photo_editor_main_bottom_bar_round">Redondo</string>
+    <string name="ds_photo_editor_main_bottom_bar_saturation">Saturación</string>
+    <string name="ds_photo_editor_main_bottom_bar_sharpness">Nitidez</string>
+    <string name="ds_photo_editor_main_bottom_bar_sticker">Pegatina</string>
+    <string name="ds_photo_editor_main_bottom_bar_text">Texto</string>
+    <string name="ds_photo_editor_main_bottom_bar_vignette">Viñeta</string>
+    <string name="ds_photo_editor_main_bottom_bar_warmth">Calidez</string>
+    <string name="ds_photo_editor_main_featured_apps_title">Más apps</string>
+    <string name="ds_photo_editor_main_reset_menu">Restablecer foto?</string>
+    <string name="ds_photo_editor_main_title">Editor de fotos</string>
+    <string name="ds_photo_editor_text_dialog_hint">Ingresa tu texto aquí</string>
+    <string name="ds_photo_editor_text_dialog_negative_button">Cancelar</string>
+    <string name="ds_photo_editor_text_dialog_positive_button">Aceptar</string>
+</resources>

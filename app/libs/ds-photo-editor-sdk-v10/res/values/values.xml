@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dsTextColor">#FFFFFFFF</color>
+    <dimen name="activity_ds_photo_editor_crop_button_font_size">22sp</dimen>
+    <dimen name="activity_ds_photo_editor_crop_button_margin">5dp</dimen>
+    <dimen name="activity_ds_photo_editor_crop_image_view_padding">10dp</dimen>
+    <dimen name="activity_ds_photo_editor_draw_image_button_margin">5dp</dimen>
+    <dimen name="activity_ds_photo_editor_draw_image_button_padding">2dp</dimen>
+    <dimen name="activity_ds_photo_editor_frame_layout_margin">10dp</dimen>
+    <dimen name="activity_ds_photo_editor_sticker_image_button_margin">10dp</dimen>
+    <dimen name="activity_ds_photo_editor_sticker_image_button_size">70dp</dimen>
+    <dimen name="activity_ds_photo_editor_sticker_view_margin">40px</dimen>
+    <dimen name="activity_ds_photo_editor_text_image_button_margin">10dp</dimen>
+    <dimen name="activity_ds_photo_editor_top_bar_title_font_size">22sp</dimen>
+    <dimen name="dialog_ds_photo_editor_text_sticker_margin_bottom">5dp</dimen>
+    <dimen name="dialog_ds_photo_editor_text_sticker_margin_left">5dp</dimen>
+    <dimen name="dialog_ds_photo_editor_text_sticker_margin_right">5dp</dimen>
+    <dimen name="dialog_ds_photo_editor_text_sticker_margin_top">15dp</dimen>
+    <dimen name="fragment_ds_photo_editor_frame_image_button_margin">10dp</dimen>
+    <dimen name="fragment_ds_photo_editor_frame_image_button_padding">3dp</dimen>
+    <dimen name="fragment_ds_photo_editor_main_bottom_bar_button_font_size">11sp</dimen>
+    <dimen name="fragment_ds_photo_editor_main_bottom_bar_button_vertical_padding">10dp</dimen>
+    <dimen name="fragment_ds_photo_editor_main_bottom_bar_button_width">80dp</dimen>
+    <dimen name="fragment_ds_photo_editor_orientation_button_padding">10dp</dimen>
+    <dimen name="fragment_ds_photo_editor_seekbar_margin">15dp</dimen>
+    <dimen name="layout_ds_photo_editor_filter_image_button_margin">6dp</dimen>
+    <dimen name="layout_ds_photo_editor_filter_image_button_padding">3dp</dimen>
+    <string name="ds_network_error_message">Please make sure you have network connected and try again later.</string>
+    <string name="ds_photo_editor_crop_button_circle">Circle</string>
+    <string name="ds_photo_editor_crop_button_free">Free</string>
+    <string name="ds_photo_editor_error_invalid_api_key" translatable="false">Error: Invalid api key</string>
+    <string name="ds_photo_editor_error_no_api_key" translatable="false">Error: No api key provided.</string>
+    <string name="ds_photo_editor_error_no_uri" translatable="false">Error: No image uri was provided</string>
+    <string name="ds_photo_editor_error_unknown" translatable="false">An error occurred when loading this image. Please try again later.</string>
+    <string name="ds_photo_editor_exit_dialog_message">Leave photo editor and discard edit?</string>
+    <string name="ds_photo_editor_exit_dialog_negative_button">Cancel</string>
+    <string name="ds_photo_editor_exit_dialog_positive_button">Exit</string>
+    <string name="ds_photo_editor_finish_up_loading_indicator">Saving photo...</string>
+    <string name="ds_photo_editor_loading_indicator_loading">Loading...</string>
+    <string name="ds_photo_editor_main_bottom_bar_contrast">Contrast</string>
+    <string name="ds_photo_editor_main_bottom_bar_crop">Crop</string>
+    <string name="ds_photo_editor_main_bottom_bar_draw">Draw</string>
+    <string name="ds_photo_editor_main_bottom_bar_exposure">Exposure</string>
+    <string name="ds_photo_editor_main_bottom_bar_filter">Filter</string>
+    <string name="ds_photo_editor_main_bottom_bar_frame">Frame</string>
+    <string name="ds_photo_editor_main_bottom_bar_more_apps">More</string>
+    <string name="ds_photo_editor_main_bottom_bar_orientation">Orientation</string>
+    <string name="ds_photo_editor_main_bottom_bar_pixelate">Pixelate</string>
+    <string name="ds_photo_editor_main_bottom_bar_round">Round</string>
+    <string name="ds_photo_editor_main_bottom_bar_saturation">Saturation</string>
+    <string name="ds_photo_editor_main_bottom_bar_sharpness">Sharpness</string>
+    <string name="ds_photo_editor_main_bottom_bar_sticker">Sticker</string>
+    <string name="ds_photo_editor_main_bottom_bar_text">Text</string>
+    <string name="ds_photo_editor_main_bottom_bar_vignette">Vignette</string>
+    <string name="ds_photo_editor_main_bottom_bar_warmth">Warmth</string>
+    <string name="ds_photo_editor_main_featured_apps_title">Featured Apps</string>
+    <string name="ds_photo_editor_main_reset_menu">Reset Photo?</string>
+    <string name="ds_photo_editor_main_title">Photo Editor</string>
+    <string name="ds_photo_editor_sdk" translatable="false">DS Photo Editor SDK</string>
+    <string name="ds_photo_editor_text_dialog_hint">Enter your text here</string>
+    <string name="ds_photo_editor_text_dialog_negative_button">Cancel</string>
+    <string name="ds_photo_editor_text_dialog_positive_button">OK</string>
+    <declare-styleable name="ImageBrushView">
+        <attr format="integer" name="photo_src"/>
+    </declare-styleable>
+    <declare-styleable name="StickerView">
+        <attr format="boolean" name="showIcons"/>
+        <attr format="boolean" name="showBorder"/>
+        <attr format="boolean" name="bringToFrontCurrentSticker"/>
+        <attr format="color" name="borderColor"/>
+        <attr format="integer" name="borderAlpha"/>
+    </declare-styleable>
+    <declare-styleable name="scv_CropImageView">
+        <attr format="reference" name="scv_img_src"/>
+        <attr name="scv_crop_mode">
+            <enum name="fit_image" value="0"/>
+            <enum name="ratio_4_3" value="1"/>
+            <enum name="ratio_3_4" value="2"/>
+            <enum name="square" value="3"/>
+            <enum name="ratio_16_9" value="4"/>
+            <enum name="ratio_9_16" value="5"/>
+            <enum name="free" value="6"/>
+            <enum name="custom" value="7"/>
+            <enum name="circle" value="8"/>
+            <enum name="circle_square" value="9"/>
+        </attr>
+        <attr format="reference|color" name="scv_background_color"/>
+        <attr format="reference|color" name="scv_overlay_color"/>
+        <attr format="reference|color" name="scv_frame_color"/>
+        <attr format="reference|color" name="scv_handle_color"/>
+        <attr format="reference|color" name="scv_guide_color"/>
+        <attr name="scv_guide_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr name="scv_handle_show_mode">
+            <enum name="show_always" value="1"/>
+            <enum name="show_on_touch" value="2"/>
+            <enum name="not_show" value="3"/>
+        </attr>
+        <attr format="dimension" name="scv_handle_size"/>
+        <attr format="dimension" name="scv_touch_padding"/>
+        <attr format="dimension" name="scv_min_frame_size"/>
+        <attr format="dimension" name="scv_frame_stroke_weight"/>
+        <attr format="dimension" name="scv_guide_stroke_weight"/>
+        <attr format="boolean" name="scv_crop_enabled"/>
+        <attr format="float" name="scv_initial_frame_scale"/>
+        <attr format="boolean" name="scv_animation_enabled"/>
+        <attr format="integer" name="scv_animation_duration"/>
+        <attr format="boolean" name="scv_handle_shadow_enabled"/>
+    </declare-styleable>
+</resources>

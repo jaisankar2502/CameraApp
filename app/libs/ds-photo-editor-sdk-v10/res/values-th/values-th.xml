@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_network_error_message">โปรดตรวจสอบว่าคุณได้เชื่อมต่อเครือข่ายแล้</string>
+    <string name="ds_photo_editor_crop_button_circle">วงกลม</string>
+    <string name="ds_photo_editor_crop_button_free">ไร้รูปแบบ</string>
+    <string name="ds_photo_editor_exit_dialog_message">ต้องการออกจากโปรแกรมแก้ไขภาพและละทิ้งการแก้ไขหรือไม่</string>
+    <string name="ds_photo_editor_exit_dialog_negative_button">ยกเลิก</string>
+    <string name="ds_photo_editor_exit_dialog_positive_button">ออก</string>
+    <string name="ds_photo_editor_finish_up_loading_indicator">กำลังบันทึกภาพ...</string>
+    <string name="ds_photo_editor_loading_indicator_loading">กำลังโหลด...</string>
+    <string name="ds_photo_editor_main_bottom_bar_contrast">คอนทราสต์ความมืด</string>
+    <string name="ds_photo_editor_main_bottom_bar_crop">ตัด</string>
+    <string name="ds_photo_editor_main_bottom_bar_draw">จิตรกรรม</string>
+    <string name="ds_photo_editor_main_bottom_bar_exposure">ความสว่าง</string>
+    <string name="ds_photo_editor_main_bottom_bar_filter">ฟิลเตอร์</string>
+    <string name="ds_photo_editor_main_bottom_bar_frame">กรอบรูป</string>
+    <string name="ds_photo_editor_main_bottom_bar_more_apps">แอปเด่น ๆ</string>
+    <string name="ds_photo_editor_main_bottom_bar_orientation">ทิศทาง</string>
+    <string name="ds_photo_editor_main_bottom_bar_pixelate">โมเสก</string>
+    <string name="ds_photo_editor_main_bottom_bar_round">กลม</string>
+    <string name="ds_photo_editor_main_bottom_bar_saturation">ความอิ่มของสี</string>
+    <string name="ds_photo_editor_main_bottom_bar_sharpness">ความคมชัด</string>
+    <string name="ds_photo_editor_main_bottom_bar_sticker">สติ๊กเกอร์</string>
+    <string name="ds_photo_editor_main_bottom_bar_text">ข้อความ</string>
+    <string name="ds_photo_editor_main_bottom_bar_vignette">เพิ่มเงาสีดำให้ขอบภาพ</string>
+    <string name="ds_photo_editor_main_bottom_bar_warmth">ความอบอุ่น</string>
+    <string name="ds_photo_editor_main_featured_apps_title">แอปเด่น ๆ</string>
+    <string name="ds_photo_editor_main_reset_menu">คืนค่าเดิมของรูปภาพ?</string>
+    <string name="ds_photo_editor_main_title">โปรแกรมแก้ไขภาพ</string>
+    <string name="ds_photo_editor_text_dialog_hint">กรอกข้อความของคุณที่นี่</string>
+    <string name="ds_photo_editor_text_dialog_negative_button">ยกเลิก</string>
+    <string name="ds_photo_editor_text_dialog_positive_button">ตกลง</string>
+</resources>

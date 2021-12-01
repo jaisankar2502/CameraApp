@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_apps_top_bar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_ads_back"
+            android:id="@+id/ds_photo_editor_apps_top_button_back"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onAppsBackClick"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ds_photo_editor_main_featured_apps_title"
+            android:textColor="@color/dsTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_ds_photo_editor_top_bar_title_font_size"
+            android:layout_centerInParent="true"
+            android:id="@+id/ds_photo_editor_crop_top_text_view"
+            />
+    </RelativeLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ds_photo_editor_apps_web_view"
+        android:layout_below="@+id/ds_photo_editor_apps_top_bar"
+        />
+
+</RelativeLayout>

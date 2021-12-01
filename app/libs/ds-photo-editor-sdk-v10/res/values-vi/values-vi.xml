@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ds_network_error_message">Vui lòng đảm bảo bạn đã kết nối mạng.</string>
+    <string name="ds_photo_editor_crop_button_circle">Vòng tròn</string>
+    <string name="ds_photo_editor_crop_button_free">Tự do</string>
+    <string name="ds_photo_editor_exit_dialog_message">Thoát và hủy chỉnh sửa hình?</string>
+    <string name="ds_photo_editor_exit_dialog_negative_button">Hủy</string>
+    <string name="ds_photo_editor_exit_dialog_positive_button">Thoát</string>
+    <string name="ds_photo_editor_finish_up_loading_indicator">Đang lưu hình...</string>
+    <string name="ds_photo_editor_loading_indicator_loading">Đang tải...</string>
+    <string name="ds_photo_editor_main_bottom_bar_contrast">Độ tương phản</string>
+    <string name="ds_photo_editor_main_bottom_bar_crop">Cắt</string>
+    <string name="ds_photo_editor_main_bottom_bar_draw">Vẽ tranh</string>
+    <string name="ds_photo_editor_main_bottom_bar_exposure">Phơi sáng</string>
+    <string name="ds_photo_editor_main_bottom_bar_filter">Bộ lọc</string>
+    <string name="ds_photo_editor_main_bottom_bar_frame">Khung</string>
+    <string name="ds_photo_editor_main_bottom_bar_more_apps">Thêm Ứng dụng</string>
+    <string name="ds_photo_editor_main_bottom_bar_orientation">Hướng</string>
+    <string name="ds_photo_editor_main_bottom_bar_pixelate">khảm</string>
+    <string name="ds_photo_editor_main_bottom_bar_round">Góc tròn</string>
+    <string name="ds_photo_editor_main_bottom_bar_saturation">Độ bão hòa</string>
+    <string name="ds_photo_editor_main_bottom_bar_sharpness">Độ sắc nét</string>
+    <string name="ds_photo_editor_main_bottom_bar_sticker">Nhãn dán</string>
+    <string name="ds_photo_editor_main_bottom_bar_text">Chữ</string>
+    <string name="ds_photo_editor_main_bottom_bar_vignette">Họa tiết</string>
+    <string name="ds_photo_editor_main_bottom_bar_warmth">Độ ấm</string>
+    <string name="ds_photo_editor_main_featured_apps_title">Ứng dụng nổi bật</string>
+    <string name="ds_photo_editor_main_reset_menu">Đặt lại hình?</string>
+    <string name="ds_photo_editor_main_title">Trình chỉnh sửa hình</string>
+    <string name="ds_photo_editor_text_dialog_hint">Nhập chữ vào đây</string>
+    <string name="ds_photo_editor_text_dialog_negative_button">Hủy</string>
+    <string name="ds_photo_editor_text_dialog_positive_button">OK</string>
+</resources>

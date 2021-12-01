@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:background="@null"
+    >
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ds_orientation_rotate_left"
+        android:background="@null"
+        android:id="@+id/ds_photo_editor_btn_rotate_left"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+        />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ds_orientation_rotate_right"
+        android:background="@null"
+        android:id="@+id/ds_photo_editor_btn_rotate_right"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+        />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ds_orientation_flip_horizontal"
+        android:background="@null"
+        android:id="@+id/ds_photo_editor_btn_flip_horizontal"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+        />
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ds_orientation_flip_vertical"
+        android:background="@null"
+        android:id="@+id/ds_photo_editor_btn_flip_vertical"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+        />
+
+</LinearLayout>

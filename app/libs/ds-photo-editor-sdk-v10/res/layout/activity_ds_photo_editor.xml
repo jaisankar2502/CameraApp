@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/ds_photo_editor_root_layout"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_top_bar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_cancel"
+            android:id="@+id/ds_photo_editor_top_button_cancel"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ds_photo_editor_main_title"
+            android:textColor="@color/dsTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_ds_photo_editor_top_bar_title_font_size"
+            android:layout_centerInParent="true"
+            android:id="@+id/ds_photo_editor_top_text_view"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ds_photo_editor_top_progress_bar"
+            android:layout_toLeftOf="@+id/ds_photo_editor_top_button_apply"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_apply"
+            android:id="@+id/ds_photo_editor_top_button_apply"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ds_photo_editor_view_container"
+        android:layout_below="@+id/ds_photo_editor_top_bar"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_ds_photo_editor_frame_layout_margin"
+        >
+        <com.dsphotoeditor.sdk.ui.photoview.PhotoView
+            android:id="@+id/ds_photo_editor_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ds_photo_editor_bottom_bar_fragment_container"
+        android:id="@+id/ds_photo_editor_view_container"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/ds_photo_editor_bottom_bar_fragment_container"
+        android:background="#273239"
+        />
+
+</RelativeLayout>

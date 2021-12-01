@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/ds_photo_editor_draw_root_layout"
+    >
+
+    <com.dsphotoeditor.sdk.ui.imagebrushview.ImageBrushView
+        android:id="@+id/imageBrushView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ds_photo_editor_draw_top_bar"
+        android:layout_above="@+id/ds_photo_editor_draw_bottom_bar"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/ds_photo_editor_draw_bottom_bar"
+        android:src="@drawable/ds_draw_zoom"
+        android:id="@+id/ds_photo_editor_draw_zoom_button"
+        android:padding="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_draw_top_bar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_cancel"
+            android:id="@+id/ds_photo_editor_draw_top_button_cancel"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ds_photo_editor_main_bottom_bar_draw"
+            android:textColor="@color/dsTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_ds_photo_editor_top_bar_title_font_size"
+            android:layout_centerInParent="true"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ds_photo_editor_draw_top_progress_bar"
+            android:layout_toLeftOf="@+id/ds_photo_editor_draw_top_button_apply"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_apply"
+            android:id="@+id/ds_photo_editor_draw_top_button_apply"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <com.dsphotoeditor.sdk.ui.focusablelinearlayout.FocusableLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_draw_bottom_bar"
+        >
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+            android:id="@+id/ds_photo_editor_draw_seekbar"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:isScrollContainer="true"
+                android:id="@+id/ds_photo_editor_draw_colors_layout"
+                >
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_draw_eraser"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_eraser"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_white"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_white"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_black"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_black"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_blue_dark"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_blue_dark"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_blue_light"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_blue_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_cyan"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_cyan"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_dark_gray"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_dark_gray"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_green_dark"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_green_dark"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_green_light"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_green_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_yellow"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_yellow"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_orange"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_orange"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_pink"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_pink"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_purple_dark"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_purple_dark"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_purple_light"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_purple_light"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_red_dark"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_red_dark"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_ds_photo_editor_draw_image_button_padding"
+                    android:layout_margin="@dimen/activity_ds_photo_editor_draw_image_button_margin"
+                    android:src="@drawable/ds_color_dot_red_light"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/ds_photo_editor_draw_color_red_light"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </com.dsphotoeditor.sdk.ui.focusablelinearlayout.FocusableLinearLayout>
+
+</RelativeLayout>

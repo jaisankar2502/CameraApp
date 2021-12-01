@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/ds_photo_editor_crop_root_layout"
+    >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#273239"
+        android:id="@+id/ds_photo_editor_crop_top_bar"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_cancel"
+            android:id="@+id/ds_photo_editor_crop_top_button_cancel"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onCropClick"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ds_photo_editor_main_bottom_bar_crop"
+            android:textColor="@color/dsTextColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_ds_photo_editor_top_bar_title_font_size"
+            android:layout_centerInParent="true"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ds_photo_editor_crop_top_progress_bar"
+            android:layout_toLeftOf="@+id/ds_photo_editor_crop_top_button_apply"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ds_top_bar_apply"
+            android:id="@+id/ds_photo_editor_crop_top_button_apply"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onCropClick"
+            />
+    </RelativeLayout>
+
+
+    <com.dsphotoeditor.sdk.ui.simplecropview.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/ds_photo_editor_crop_bottom_bar"
+        android:layout_below="@+id/ds_photo_editor_crop_top_bar"
+        android:padding="@dimen/activity_ds_photo_editor_crop_image_view_padding"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds_photo_editor_crop_bottom_bar"
+        android:scrollbars="none"
+        android:background="#273239"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:isScrollContainer="true"
+            android:id="@+id/ds_photo_editor_crop_container"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_1"
+                android:text=" 1:1 "
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_2"
+                android:text=" 3:4 "
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_3"
+                android:text=" 4:3 "
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_4"
+                android:text=" 16:9 "
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_5"
+                android:text=" 9:16 "
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_6"
+                android:text="@string/ds_photo_editor_crop_button_free"
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ds_photo_editor_crop_7"
+                android:text="@string/ds_photo_editor_crop_button_circle"
+                android:textSize="@dimen/activity_ds_photo_editor_crop_button_font_size"
+                android:textStyle="bold"
+                android:onClick="onCropClick"
+                android:layout_margin="@dimen/activity_ds_photo_editor_crop_button_margin"
+                android:textColor="@color/dsTextColor"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

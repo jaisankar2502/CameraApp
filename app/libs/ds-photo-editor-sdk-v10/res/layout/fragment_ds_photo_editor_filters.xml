@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="@null"
+    >
+
+    <LinearLayout
+        android:id="@+id/fragment_ds_photo_editor_filters_button_container"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:isScrollContainer="true"
+        >
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_1"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_2"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_3"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_4"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_5"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_6"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_7"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_8"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_9"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_10"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_11"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_12"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_13"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_14"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_15"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_16"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_17"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_18"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_19"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_20"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_21"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_22"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_23"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_24"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_25"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_26"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_27"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_28"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_29"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_30"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_31"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_32"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_33"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_34"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_35"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_36"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_37"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_38"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_39"
+            />
+
+        <include
+            layout="@layout/layout_ds_photo_editor_filter_image_button"
+            android:id="@+id/ds_photo_editor_btn_filter_lut_40"
+            />
+
+    </LinearLayout>
+
+</HorizontalScrollView>

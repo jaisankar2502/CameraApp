@@ -1,0 +1,31 @@
+
+
+# DS Photo Editor Proguard:
+-allowaccessmodification
+
+-keep class com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity {public *;}
+-keep class com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity {public *;}
+-keep class com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity {public *;}
+-keep class com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity {public *;}
+-keep class com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity {public *;}
+-keep class com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants {public *;}
+
+
+
+# RenderScript
+# noinspection ShrinkerUnresolvedReference
+-keepclasseswithmembernames class * {
+native <methods>;
+}
+-keep class androidx.renderscript.** { *; }
+
+
+
+# Glide Proguard:
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public class * extends com.bumptech.glide.module.AppGlideModule
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+
